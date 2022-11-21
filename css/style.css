@@ -1,3 +1,260 @@
 body {
-    background-color: bisque;
+    /* background: url(/img/pc1.jfif); */
+}
+.h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+}
+.exp2 .h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+}
+.exp3 .h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+}
+.exp4 .h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+}
+.exp5 .h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+}
+.textnav {
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    color: black !important;
+}
+a:hover {
+    color: rgb(221, 80, 80) !important;
+}
+.carousel1 a:hover {
+    color: white !important;
+}
+.shoecards a:hover {
+    background-color: rgb(194, 48, 48) !important;
+    color: white !important;
+    border-color: white !important;
+}
+.shoptext {
+    font-size: 40px;
+    font-family: 'Alata', sans-serif;
+}
+/* carousel / hero */
+.c-item {
+    height: 800px;
+}
+.c-img {
+    height: 100%;
+    object-fit:cover;
+}
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(15, 15, 15);
+    opacity: 0.65;
+}
+.footer {
+    background-color: rgb(0, 0, 0);
+}
+/* .carousel-caption {
+    bottom: 2.3rem;
+} */
+.carousel-caption p {
+    font-size:80px;
+    font-family: 'Alata', sans-serif;
+    color: azure;
+    /* background: white;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.1em transparent; */
+}
+/* .carousel-caption p {
+    font-size: 20px;
+} */
+.slider-btn {
+    margin-top: 5px;
+}
+.slider-btn .btn {
+    background-color: black;
+    color: white;
+    border-radius: 1;
+    padding: 0.7rem;
+}
+.divcol2 {
+    margin-top: 260px;
+}
+.btn-1:hover:hover {
+    background-color: rgb(194, 48, 48) !important;
+}
+@media (min-width: 768px) {  
+    .divcol {margin-top: 300px;}
+    .divcol3 {margin-top: 300px;}
+  }
+.aboutus {
+    font-family: 'Pacifico', cursive;
+}
+
+.fully {
+    background-image: url(/img/cp32.png);
+    background-repeat: no-repeat;
+    /* height: 100%; */
+    /* object-fit:cover; */
+    /* width: 100%; */
+    background-size: cover;
+    background-position: center;
+
+
+}
+.botp {
+    font-size: 20px;
+    font-family: 'Alata', sans-serif;
+}
+
+
+/* cart  */
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
 }
