@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Oleo+Script+Swash+Caps&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="/store.js" async></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md exp5">
+        <a class="navbar-brand m-1 ps-2 h1" href="/index.html"> Expired </a>
+          <button 
+           type="button"
+           data-bs-toggle="collapse"
+           data-bs-target="#navbarNav"
+           class="navbar-toggler m-2 bg-dark"
+           aria-controls="navbarNav"
+           aria-expanded="false"
+           aria-label="toggle navigation">
+           <!-- <span class="navbar-toggler-icon"></span> -->
+          </button>
+      <div class="collapse navbar-collapse me-5" id="navbarNav">
+        <ul class="navbar-nav ms-auto textnav">
+          <li class="nav-item active">
+            <a href="/index.html" class="nav-link m-2">
+              Home
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="/About.html" class="nav-link m-2">
+              About
+            </a>
+          </li>
+          <li class="nav-item dropdown m-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Shop </i>
+            </a>
+            <ul class="dropdown-menu ">
+              <li><p class="ms-2 mb-0">Shoes</p></li>
+              <li><a class="dropdown-item" href="shop.html">   -Jordan's</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown m-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">MyCart <i class="fa-solid fa-cart-plus"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/cart.html">View My Cart</a></li>
+                <li><a class="dropdown-item" href="/checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container content-section">
+        <h2 class="section-header">Quick Add</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Jordan 1 Retro High Uni</span>
+                <img class="shop-item-image" src="/img/lb12.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$1600</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Jordan 1 Retro High Red</span>
+                <img class="shop-item-image" src="/img/red1.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$4200</span>
+                    <button class="btn btn-dark shop-item-button"type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Jordan 11 Retro Bred</span>
+                <img class="shop-item-image" src="/img/bred11.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$365</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Jordan 11 Retro Space Jam</span>
+                <img class="shop-item-image" src="/img/11sj.PNG">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$470</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="/img/keychain.PNG" width="100" height="100">
+                    <span class="cart-item-title"> FREE Keychain</span>
+                </div>
+                <span class="cart-price cart-column"> $0 </span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price"></span>
+        </div>
+        <div class= "text-center mb-5">
+        <button class="btn btn-dark bg-black">
+            <a class="dropdown-item text-white" href="/checkout.html">Checkout</a>
+        </button>
+        </div>
+    </section>
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
